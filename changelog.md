@@ -4,9 +4,14 @@ View on GitHub for the newest ChangeLog: https://github.com/discord-haskell/disc
 
 The Discord API constantly changes. This library issues updates when we implement new features added to the API or remove outdated functionalities. In order to interact with the Discord API safely and predictably, please update the library whenever there is a new version released.
 
-## Unreleased
+## 1.19.0
 
 - [ShapeOfMatter](https://github.com/discord-haskell/discord-haskell/pull/231) Fix broken parsing of channel IDs in STAGE_INSTANCE and VOICE scheduled events
+- [julmb](https://github.com/discord-haskell/discord-haskell/pull/238) Fix AutoModerationRule ToJSON instance
+- [julmb](https://github.com/discord-haskell/discord-haskell/pull/239) [**BREAKING**] Edit EditFollowupInteractionMessage constructor to take an InteractionResponseMessage instead of an InteractionResponse
+- [julmb](https://github.com/discord-haskell/discord-haskell/pull/246) [**BREAKING**] Adjust and extend attachments so that users can upload and correctly manage attachments, a much needed update
+- [julmb](https://github.com/discord-haskell/discord-haskell/pull/247) [**BREAKING**] Give types to the resolved data type
+- [yutotakano](https://github.com/discord-haskell/discord-haskell/pull/252) Fix a bug in the `interaction-commands` example and add more commentary to optionValue{Integer|Number}{Max|Min}Val fields
 
 ## 1.18.0
 
