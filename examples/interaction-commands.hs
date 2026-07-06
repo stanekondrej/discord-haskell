@@ -162,7 +162,7 @@ newExampleSlashCommand =
                               False
                               (Right [Choice "one" Nothing 1, Choice "two" Nothing 2, Choice "minus 1" Nothing (-1)])
                               (Just $ -1)
-                              (Just $ -2),
+                              (Just 5),
                             OptionValueInteger
                               "numbercomm3"
                               Nothing

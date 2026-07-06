@@ -285,9 +285,13 @@ data OptionValue
         optionValueRequired :: Bool,
         -- | Whether to autocomplete or have a list of named choices. For neither option, use `Left False`
         optionValueIntegerChoices :: AutocompleteOrChoice Integer,
-        -- | The lower bound of values permitted. If choices are provided or autocomplete is on, this can be ignored
+        -- | The lower bound of values permitted. If specified, must be <= the max value. 
+        -- Note that Discord may exhibit buggy client behaviour if you set this to a Just value
+        -- while also setting 'optionValueIntegerChoices' to anything other than `Left False`.
         optionValueIntegerMinVal :: Maybe Integer,
-        -- | The upper bound of values permitted. If choices are provided or autocomplete is on, this can be ignored
+        -- | The upper bound of values permitted. If specified, must be >= the min value.
+        -- Note that Discord may exhibit buggy client behaviour if you set this to a Just value
+        -- while also setting 'optionValueIntegerChoices' to anything other than `Left False`.
         optionValueIntegerMaxVal :: Maybe Integer
       }
   | OptionValueBoolean
@@ -365,9 +369,13 @@ data OptionValue
         optionValueRequired :: Bool,
         -- | Whether to autocomplete or have a list of named choices. For neither option, use `Left False`
         optionValueNumberChoices :: AutocompleteOrChoice Number,
-        -- | The lower bound of values permitted. If choices are provided or autocomplete is on, this can be ignored
+        -- | The lower bound of values permitted. If specified, must be <= the max value. 
+        -- Note that Discord may exhibit buggy client behaviour if you set this to a Just value
+        -- while also setting 'optionValueIntegerChoices' to anything other than `Left False`.
         optionValueNumberMinVal :: Maybe Number,
-        -- | The upper bound of values permitted. If choices are provided or autocomplete is on, this can be ignored
+        -- | The upper bound of values permitted. If specified, must be >= the min value.
+        -- Note that Discord may exhibit buggy client behaviour if you set this to a Just value
+        -- while also setting 'optionValueIntegerChoices' to anything other than `Left False`.
         optionValueNumberMaxVal :: Maybe Number
       }
   | OptionValueAttachment
