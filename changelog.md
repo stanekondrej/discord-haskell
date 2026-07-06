@@ -11,6 +11,7 @@ The Discord API constantly changes. This library issues updates when we implemen
 - [julmb](https://github.com/discord-haskell/discord-haskell/pull/239) [**BREAKING**] Edit EditFollowupInteractionMessage constructor to take an InteractionResponseMessage instead of an InteractionResponse
 - [julmb](https://github.com/discord-haskell/discord-haskell/pull/246) [**BREAKING**] Adjust and extend attachments so that users can upload and correctly manage attachments, a much needed update
 - [julmb](https://github.com/discord-haskell/discord-haskell/pull/247) [**BREAKING**] Give types to the resolved data type
+- [yutotakano](https://github.com/discord-haskell/discord-haskell/pull/252) Adjust the `interaction-commands` example and add more commentary to optionValue{Integer|Number}{Max|Min}Val fields
 
 ## 1.18.0
 
