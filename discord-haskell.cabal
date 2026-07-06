@@ -23,6 +23,7 @@ tested-with:         GHC == 8.10.7
                    , GHC == 9.8
                    , GHC == 9.10
                    , GHC == 9.12
+                   , GHC == 9.14
 extra-doc-files:     README.md
                    , changelog.md
 
